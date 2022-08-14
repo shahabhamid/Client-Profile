@@ -1,0 +1,22 @@
+- [ ] Dashboard at present there is one for leads, needs few more dashboard for clients.
+- [ ] Manager Agent Dashboard to include all his reporting agent clients and his teams(agent) action items progress.(we will need a table/view to map manager and his team in users to roles mapping)
+- [ ] Agent dashboard, including all client detail(sample dashboard will be attached)
+- [ ] Calendar to show their events for the day.
+
+- [ ] Automatic  15days one follow up reminder created for every client.
+      - Introduction call after the payment - 24 hours
+      - Induction call - 48 hours
+      - Introduction Call - 
+      - Review Calls and Follow up call 
+        - Semester 1: Follow up calls every Odd week,
+        - Semester 2: Follow up calls every Odd week ,
+        - Semester 3: Follow up calls every Odd week)
+ [ ] Code best practices
+- [ ] Client screen to be as like the screenshot along with child forms exact as like screenshot with the ability to add client image and so on.
+- [ ] Payment using stripe and card.
+- [ ] WhatsApp integration.
+- [ ] One form for client complaints, interactions and service request.
+- [ ] Database to be updated to My SQL.
+- [ ] Convert code from classes to functions.
+- [ ] Approver screen to approve the actions performed by admin.
+

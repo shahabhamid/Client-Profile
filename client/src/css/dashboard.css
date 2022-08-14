@@ -1,0 +1,379 @@
+.dashboardContainer {
+  width: 96%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 10px 2%;
+  overflow-y: auto;
+  height: calc(100vh * (1 / var(--ratio)) - var(--headerHeight));
+  background-color: #fff;
+}
+
+.dbFirstRow {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.single_quick_activity {
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  max-width: 325px;
+  width: 310px;
+  min-width: 275px;
+  padding: 50px 2.5%;
+  background: #3b76ef;
+  margin: 0 10px;
+  position: relative;
+}
+
+.single_quick_activity:nth-child(2) {
+  background: #ed6097;
+}
+
+.single_quick_activity:nth-child(3) {
+  background: #a66dd4;
+}
+
+.single_quick_activity:nth-child(4) {
+  background: #6dd4b1;
+}
+
+.single_quick_activity::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: 0.5s;
+  background-size: cover;
+}
+
+.single_quick_activity h4 {
+  font-size: 20px;
+  margin-bottom: 0;
+  font-weight: 500;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.single_quick_activity h3 {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 0;
+  font-weight: 700;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #fff;
+  margin-bottom: 7px;
+}
+
+.single_quick_activity:hover {
+  background: rgba(59, 118, 239);
+}
+
+.single_quick_activity:hover::before {
+  background-image: url(../img/diamond.png);
+}
+
+.dbSecondRow {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lineChartArea {
+  width: 60%;
+  height: 600px;
+}
+
+.lineChartArea .apexcharts-canvas {
+  margin: auto;
+  margin-top: 50px;
+}
+
+.linkAndCalendarArea {
+  width: 40%;
+}
+
+.quick_link_wrap {
+  background-color: #fff;
+  border: 1px solid rgb(95, 95, 238);
+  white-space: nowrap;
+  overflow-x: auto;
+  margin-bottom: 10px;
+}
+
+.quick_link_header {
+  display: block;
+  background-color: rgb(95, 95, 238);
+  font-family: Poppins-Bold;
+  color: #fff;
+  font-size: 22px;
+  padding: 10px;
+}
+
+.quickLink {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 10px 0;
+  margin-left: 10px;
+  background-color: #86d35f;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.quickLink:nth-child(2) {
+  background-color: #ff6666;
+}
+
+.quickLink:nth-child(3) {
+  background-color: #ed6097;
+}
+
+.quickLink:nth-child(4) {
+  background-color: #85a9ec;
+}
+
+.quickLink:nth-child(5) {
+  background-color: #a66dd4;
+}
+
+.quickLink > i {
+  color: white;
+  font-size: 28px;
+  width: 30px;
+  margin: 0 calc((100% - 30px) / 2);
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.quickLink > p {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-family: Poppins-Regular;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.elegant-calendar {
+  max-width: 100%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid #39cb75;
+  -webkit-box-shadow: 0px 19px 27px -20px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 19px 27px -20px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 19px 27px -20px rgba(0, 0, 0, 0.16);
+}
+
+.wrap-header {
+  position: relative;
+  width: 45%;
+  background: #39cb75;
+}
+
+@media (max-width: 767.98px) {
+  .wrap-header {
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+
+#header {
+  width: 100%;
+  position: relative;
+}
+
+#header .pre-button,
+#header .next-button {
+  cursor: pointer;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+
+#header .pre-button i,
+#header .next-button i {
+  color: #fff;
+}
+
+.pre-button {
+  left: 5px;
+}
+
+.next-button {
+  right: 5px;
+}
+
+.head-day {
+  font-size: 6em;
+  line-height: 1;
+  color: #fff;
+}
+
+.head-month {
+  font-size: 2em;
+  line-height: 1;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.calendar-wrap {
+  width: 100%;
+  background: #fff;
+  padding: 40px 20px 20px 20px;
+}
+
+#calendar {
+  width: 100%;
+}
+
+#calendar tr {
+  height: 3em;
+}
+
+.elegant-calendar thead tr {
+  color: #000;
+  font-weight: 700;
+}
+
+.elegant-calendar tbody tr {
+  color: #000;
+}
+
+.elegant-calendar tbody td {
+  width: 14%;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  position: relative;
+  z-index: 0;
+}
+
+.elegant-calendar tbody td:after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  width: 44px;
+  height: 44px;
+  margin: 0 auto;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .elegant-calendar tbody td:after {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+  }
+}
+
+.elegant-calendar tbody td:hover,
+.elegant-calendar .selected {
+  color: #fff;
+  border: none;
+}
+
+.elegant-calendar tbody td:hover:after,
+.elegant-calendar .selected:after {
+  background: #2a3246;
+}
+
+.elegant-calendar tbody td:active {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+}
+
+#today {
+  color: #fff;
+}
+
+#today:after {
+  background: #39cb75;
+}
+
+#disabled {
+  cursor: default;
+  background: #fff;
+}
+
+#disabled:hover {
+  background: #fff;
+  color: #c9c9c9;
+}
+
+#disabled:hover:after {
+  background: transparent;
+}
+
+#reset {
+  display: block;
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  z-index: 999;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  padding: 0 0.5em;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+#reset:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+#reset:active {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+/*Analytics */
+
+.salesReturnDuration {
+  float: right;
+  width: 250px;
+  margin-top: 2%;
+  margin-right: 10%;
+}
