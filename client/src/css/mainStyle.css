@@ -1748,9 +1748,7 @@ a.dt-button:hover {
 .topProfile {
     position: relative;
     display: flex;
-    background-color: #004979;
-    color: #fff;
-    padding: 10px 20px 20px 20px;
+    color: #000;
     font-family: Poppins-Regular, sans-serif;
 }
 
@@ -1772,7 +1770,6 @@ a.dt-button:hover {
 .topProfile .info p {
     margin: 5px 0;
     font-size: 18px;
-    color: #fff;
 }
 
 .info span{
@@ -1871,7 +1868,12 @@ a.dt-button:hover {
 .editableField input:focus {
   outline: none;
 }
-
+.ml-1{
+  margin-left:5px;
+}
+.ml-2{
+  margin-left:10px;
+}
 /*Client SIdebar*/
 .clientSidebar {
   zoom: var(--ratio);
@@ -1880,8 +1882,7 @@ a.dt-button:hover {
   height:100%;
   width: 100%;
   min-width: 60px;
-  padding-left: 5px;
-  background-color: #eee;
+  background-color: white;
   font-family: Poppins-Regular, sans-serif, "Open Sans";
   overflow-y: auto;
   overflow-x: hidden;

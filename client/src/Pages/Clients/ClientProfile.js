@@ -363,7 +363,7 @@ function ClientProfile(props) {
                                     tableBody={state.diseaseList}
                                     searchField="DiseaseName"
                                     customAction={[
-                                        { title: "Delete", icon: "times text-red", onClickEvent: (e) => { } }
+                                        { title: "Delete", icon: "fas fa-times text-red", onClickEvent: (e) => { } }
                                     ]}
                                 />
                             </div>

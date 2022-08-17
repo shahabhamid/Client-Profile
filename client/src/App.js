@@ -62,18 +62,18 @@ class App extends Component {
         Authorization: `Bearer notoken`,
       },
     }
-    axios.all(
-      [
-        axios.get(`${this.state.ATLAS_URI}/getClients/`, config),
-      ]
-    )
-      .then(axios.spread((clients) => {
-        this.setState({
-          clientsList: clients.data,
-        });
+    // axios.all(
+    //   [
+    //     axios.get(`${this.state.ATLAS_URI}/getClients/`),
+    //   ]
+    // )
+    //   .then(axios.spread((clients) => {
+    //     this.setState({
+    //       clientsList: clients.data,
+    //     });
 
-      }))
-      .catch(error => console.log(error));
+    //   }))
+    //   .catch(error => console.log(error));
 
 
   }
