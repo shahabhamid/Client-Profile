@@ -7,6 +7,7 @@ import SelectBox from "../../components/SelectBox";
 import BoxHeader from "../../components/BoxHeader";
 import SideBarItem from "../../components/SideBarItem";
 import Accordion from "react-bootstrap/Accordion";
+import Box from "../Clients/Box";
 
 function ClientNotes(props) {
   const [state, setState] = useState({
@@ -48,16 +49,32 @@ function ClientNotes(props) {
   function changeHandler(e) {
     oldChangeHandler(e, state, setState);
   }
-
+  const [backboxvalue, setbackboxvalue] = useState(false);
   function onInputModel(e) {
+    setbackboxvalue(true);
     setNewNotes(true);
   }
   return (
     <section>
-      <BoxHeader
-        title={`Client Notes`}
-        boxTools={["Add"]}
-        openInputModal={onInputModel}
+      <Box
+        title={`Notes`}
+        backbox={backboxvalue}
+        onbackpress={() => {}}
+        boxTools={[
+          {
+            title: "Add New",
+            icon: "fas fa-plus",
+            // backbox: setbackboxvalue,
+            onClickEvent: (e) => {
+              onInputModel(e);
+            },
+          },
+          {
+            title: "Add",
+            icon: "fas fa-plus",
+            onClickEvent: (e) => {},
+          },
+        ]}
       />
 
       <div className="box-body bozero ">
